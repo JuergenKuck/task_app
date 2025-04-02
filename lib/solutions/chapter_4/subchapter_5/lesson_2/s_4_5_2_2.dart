@@ -4,6 +4,21 @@ class S4522 extends StatelessWidget {
   const S4522({super.key});
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return MyStatelessWidget();
+  }
+}
+
+class MyStatelessWidget extends StatelessWidget {
+  const MyStatelessWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      spacing: 8,
+      children: [
+        Text('Hello Jürgen'),
+        ElevatedButton(onPressed: () {}, child: Text('Klick mich')),
+      ],
+    );
   }
 }
